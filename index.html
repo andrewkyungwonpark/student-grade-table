@@ -34,7 +34,6 @@
      border-radius: 1rem;
      color: white;
      border: 1px solid black;
-
     }
 
     #cancel {
@@ -70,27 +69,29 @@
       </table>
     </div>
     <div class="col-4">
-      <div class="input-group input-group-lg margin-bottom padding-right">
-        <div class="input-group-prepend">
-          <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
-        </div>
-        <input type="text" class="form-control" placeholder="Name">
-      </div>
-      <div class="input-group input-group-lg margin-bottom padding-right">
-        <div class="input-group-prepend">
-          <span class="input-group-text"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+      <div class="form-group">
+        <div class="input-group input-group-lg margin-bottom padding-right">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
           </div>
-        <input type="text" class="form-control" placeholder="Course">
-      </div>
-      <div class="input-group input-group-lg margin-bottom padding-right">
-        <div class="input-group-prepend">
-          <span class="input-group-text"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" placeholder="Name">
         </div>
-        <input type="text" class="form-control" placeholder="Grade">
-      </div>
-      <div id="add-cancel-buttons">
-        <button id="add" type="submit">Add</button>
-        <button id="cancel" type="reset">Cancel</button>
+        <div class="input-group input-group-lg margin-bottom padding-right">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+            </div>
+          <input type="text" class="form-control" placeholder="Course">
+        </div>
+        <div class="input-group input-group-lg margin-bottom padding-right">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Grade">
+        </div>
+        <div id="add-cancel-buttons">
+          <button id="add" type="submit">Add</button>
+          <button id="cancel" type="reset">Cancel</button>
+        </div>
       </div>
     </div>
   </div>
@@ -100,6 +101,7 @@
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="components/page-header.js"></script>
+  <script src="components/grade-form.js"></script>
   <script src="main.js"></script>
 </body>
 
