@@ -10,10 +10,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
   integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
   crossorigin="anonymous">
+  <style>
+    header {
+      padding: 1.5rem;
+      font-size: 24pt;
+    }
+  </style>
 </head>
-
 <body>
-  <header>Student Grade Table</header>
+  <header>
+    <div class="row justify-content-around">
+      <span class="col col-lg-8">Student Grade Table</span><span class="col col-sm-2">Average Grade<span class="badge badge-secondary">92</span></span>
+    </div>
+  </header>
   <table class="table table-striped table-bordered">
     <thead>
       <tr class="table-dark">
@@ -30,6 +39,7 @@
   crossorigin="anonymous"></script>
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
+  <script src="components/page-header.js"></script>
   <script src="main.js"></script>
 </body>
 
