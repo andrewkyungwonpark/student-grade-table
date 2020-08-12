@@ -13,10 +13,38 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous">
   <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
     header {
       padding: 1.5rem;
       font-size: 24pt;
     }
+
+    .margin-bottom {
+      margin-bottom: .5rem;
+    }
+
+    .padding-right {
+      padding-right: 2.5rem
+    }
+
+    #add,
+    #cancel {
+     border-radius: 1rem;
+     color: white;
+     border: 1px solid black;
+
+    }
+
+    #cancel {
+      background-color: firebrick;
+    }
+
+    #add {
+      background-color: green;
+    }
+
   </style>
 </head>
 
@@ -42,16 +70,27 @@
       </table>
     </div>
     <div class="col-4">
-      <div class="form-group">
-        <div>
-          <input placeholder="Name">
+      <div class="input-group input-group-lg margin-bottom padding-right">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
         </div>
-        <div>
-          <input placeholder="Course">
+        <input type="text" class="form-control" placeholder="Name">
+      </div>
+      <div class="input-group input-group-lg margin-bottom padding-right">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+          </div>
+        <input type="text" class="form-control" placeholder="Course">
+      </div>
+      <div class="input-group input-group-lg margin-bottom padding-right">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
         </div>
-        <div>
-          <input placeholder="Grade">
-        </div>
+        <input type="text" class="form-control" placeholder="Grade">
+      </div>
+      <div id="add-cancel-buttons">
+        <button id="add" type="submit">Add</button>
+        <button id="cancel" type="reset">Cancel</button>
       </div>
     </div>
   </div>
