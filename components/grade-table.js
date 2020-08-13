@@ -6,6 +6,12 @@ class GradeTable {
   updateGrades(grades) {
     var tableBody = this.tableElement.querySelector('tbody');
     tableBody.innerHTML = '';
+    var hiddenP = document.querySelector('p')
+    if (!grades[0]) {
+      hiddenP.classList.remove('d-none')
+    } else {
+      hiddenP.classList.add('d-none')
+    }
     for (var i = 0; i < grades.length; i++) {
       var gradeRow = this.renderGradeRow(grades[i], this.deleteGrade)
       tableBody.append(gradeRow);
